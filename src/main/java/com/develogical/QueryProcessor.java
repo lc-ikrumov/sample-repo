@@ -18,8 +18,8 @@ public class QueryProcessor {
        //String[] numbers = parts[1].split(",");
         Integer max = 0;
         while(nums.hasMoreTokens()) {
-            String token = nums.nextToken();
-            if(Integer.parseInt(token.trim()) > max) {
+            String token = nums.nextToken().trim();
+            if(Integer.parseInt(token) > max) {
                 max = Integer.parseInt(token);
             }
             return max.toString();
